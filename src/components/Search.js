@@ -31,11 +31,11 @@ const Search = () => {
         <Container>
         <div className='m-5'>
             <InputGroup className="mb-3 flex align-items-center">
-                <Form.Control placeholder="From" aria-label="Text input with dropdown button" value={from} onChange={(e) =>{
+                <Form.Control placeholder="From: chandigarh" aria-label="Text input with dropdown button" value={from} onChange={(e) =>{
                     setFrom(e.target.value);
                 }} />
                 <BsArrowLeftRight onClick={interChangeFromTo} className="mx-3"/>
-                <Form.Control placeholder="To" aria-label="Text input with dropdown button" value={to} onChange={(e) =>{
+                <Form.Control placeholder="To: delhi" aria-label="Text input with dropdown button" value={to} onChange={(e) =>{
                     setTo(e.target.value);
                 }}/>
                 <Form.Control placeholder="Date" type='Date' aria-label="Text input with dropdown button" value={journeyDate} onChange={(e)=>{
